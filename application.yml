@@ -1,15 +1,18 @@
 gitops:
   name: gitops-helm-application
-  projectIdentifier: default_project
+  projectIdentifier: defaultproject
   orgIdentifier: default
   type: application
   application:
     metadata:
       namespace: default
       clusterName: gitops_cluster
+      labels:
+        harness.io/serviceRef: ""
+        harness.io/envRef: ""
     spec:
       source:
-        repoURL: https://github.com/Stan-BK/harness-test.git
+        repoURL: https://github.com/Stan-BK/harness-test
         path: .
         targetRevision: main
       destination:
