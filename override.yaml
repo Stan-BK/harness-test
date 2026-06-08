@@ -1,0 +1,260 @@
+## Harness GitOps Agent - Overrides File
+## For default overrides, please refer to https://github.com/harness/gitops-helm/blob/main/values.yaml
+## Argo CD overrides can be found at https://github.com/argoproj/argo-helm/blob/main/charts/argo-cd/values.yaml
+
+# <---Argo CD image details--->
+global:
+  image:
+    repository: docker.io/harness/argocd
+    tag: v3.3.9
+
+# <---Harness configuration overrides--->
+harness:
+  identity:
+    accountIdentifier: pJGNrSutQy-F0O3vm0eSXw
+    orgIdentifier: default
+    projectIdentifier: defaultproject
+    agentIdentifier: harnessagent
+
+  secrets:
+    agentSecret: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFdndJQkFEQU5CZ2txaGtpRzl3MEJBUUVGQUFTQ0JLa3dnZ1NsQWdFQUFvSUJBUUN0K3QwUXZIQmROK3FJCm01dXlqMmNEZ2dUSmlkR29wYnVIR3ovbUh4RnJvcUZpRVlkWkJrZldtTTRES2ljV1ExUG1MdHJZRHY1dnJBbTQKNlBSbnBIRGx6bW5EOGxPQTVjOThoYjBXK2F1NHFtWlo5aXVTcnU1QmhvS3VvT0RQMjhLYjBBWllhZXlEMkllKwp4OFpLWmZTYmE0d25idjRmSzZqcjNzRzVkL0h0Ry9hSm9HaXFla3NWekdGd3RpUzY5ZTBMb1JVT2tOMGhteThxClBEWmsybjdhZjlzRXlCcWJNZXo5TmlaMXM3YmxHejJ2TEZocFdZMnIrKzBsaEtXZ0Z5elhSY1lVUDJiRzczMzUKZ3pmREQwVExKV3d0eHZ6MmJkQmFSci9BZzB6TlM3M2hmSyszWG1kYU80OHZpMGpUUUxoMXh1RC9EMGtXZ3h1ZQplTEQ3M2pXSEFnTUJBQUVDZ2dFQVBsSkNwaUFhVUFvYnBWdTRaam9nT0kxMmtZc2c0enlhOUVhNm1RQkFDVUowCmRPQzZqeFZFM29aV0phUVA1Rld4MUI2c25nQ2crL2V3YytCZXpGR0hiNHFGTUgrNWtjN0FpR2FQMlk4T0NGUmgKM1kvbEErSk56b01VaE9GMEpvRWVNUnBQYTVSbCtNU3p1NDlzWkhJcE1STlJYVDdSSVBGT3pVODZMZW5kYTRXbApoRnIycDNrNXBoTTk4WW9sZjN4akJQbHpxTUFJeEJWVmNXejdKLzdzTzFhT3V3aWcrZ1l2Vi93djdpeVh3Wm9QCmlPaDAwR3o2THhGQnU4NVEzdUlJZnNnV1Era3NHUXA2YVlrZ2prTjRRWmRyMEt3R0QvMzIxaUhLeWYveVQrNGcKNkpvMzZDSkZPVm4yY05LdVZnVE9LVEZEbFJacERGa1pabDcvZWNmY1lRS0JnUURaSi82VER6V3RuaGx0YUU5VQo1dEtMQWVBQ1ZwWVplRU9zK21GSTMwUjdPR05oMUdNLzFPbEFmOVMzR2l1RFB2akM5OWxxdWZ4eHJUM0NSVmhDCmcrRUlodW9obHBIZG9FSmdNSTJuSVV1V3ZwYnRxZE5zbWxnd1lTMkFqSHM3MTd2TmhJQm0wTlVUZnhTR1hQT3MKVGhxNnMwdTJqVzFNMU51cUo5bGZnRU5YOHdLQmdRRE5HYjRuYU1JdW1IMm1qcEtkcGlTcUNjcnNrbGIxVjU3YQpSR3E3dmV0SmNWQ1RWOVVoTytQUHpDbGlycW9IY0dCUm1EbEMvb00vWHArZ0hLd2p6bEhqN0dCNUMrSEtqak1lCnMycWRsK2Y4cnJ4U2krUlBvUUNSMXVUN05CYkRNQmdidS85Sjl5R3NpYU10SzZab1RPN1ByUjB6dFlhYzZ6aXMKNi84c09VU0ZIUUtCZ1FDdGZiVjJ1alVSYzNrdkhxSWEyNXFrTWloTTFlNXZoTlRVc3VqY2RudlkwaEVjVExuSwplb2lyM2pVTTRGeVpLOHRFd1EwenBrbVliR2NsK1k3cy9UM2hPU0IvR3pPSVZBd1RtMWJnaXNwQU1oNlUzQlFzCjlSYTErRDJKTVRNWGVXRHliZ1REbjk1TUNFQldwSmFOTjQxRlVnK1FWbWRYZGN2Vm9xYVpGUGs0bndLQmdRQ2MKTEdEMkF6ZnhZUjQwYUZYT0EwZmh6a2tkY0tVVWRsNjRWdVpyQk1lWGlkaFFDYzU1V3ZBeU40Uy81cjREb2hkRgpxa0xYOTVNYStzTlRtT0dlOWlpM0JEUEZtRDJiRGtKd3V5K1F4cTNZWTNsMDVaNjQzNkRlYkNLNkFVVGY1Y3hGCnVoWS9UUlh3R25JTklESzdNdkdaWTNsYitYcUNIRDV3dGRiODVySjlKUUtCZ1FDVG90RStDNm5vYmdJbEdrVmMKdFJvUTU4cXdLclNFcXJBUUNyNmhvWjZIRzloV0NUbWtJTW51eUgwZlcyQzdVSTdYam42Ym5LaDd3dWRFYkpWRgpKMEFKMTFlNEZTRnNYMzQyWEhGNzFNNU5FakYyZWlScXRoZzFkWk9DZWtkcmRYdHQ4aUFFSStQM0Y2VXBnMXpZCmJaVVYxdFBOc2grekcwbjdGc21XRTl6NUxBPT0KLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K
+    # <---CA data overrides--->
+    caData:
+      enabled: false
+      secret: 
+    redisPassword: 2mMZLh35JvyqhA==
+
+  gitopsServerHost: https://app.harness.io/prod1/gitops
+  networkPolicy:
+    create: true
+  createClusterRoles: true
+
+  configMap:
+    logLevel: DEBUG
+
+    # <---Agent communication protocol details--->
+    http:
+      agentHttpTarget: https://app.harness.io/gitops
+      tlsEnabled: false
+      certPath: /tmp/ca.bundle
+
+    reconcile:
+      appsetReconcile: true
+
+  # <---Disaster Recovery override values--->
+  disasterRecovery:
+    enabled: false
+    identifier: 
+
+  # <---Openshift override values--->
+  openshift:
+    enabled: false
+  flux:
+    enabled: false
+  argocdHarnessPlugin:
+    enabled: false
+
+argo-cd:
+  enabled: true
+
+# <---Argo CD configuration overrides--->
+
+  ## IMPORTANT: Mark crds as false for Helm installations if they are already installed in the cluster
+  crds:
+    install: true
+    keep: true
+
+  configs:
+    cm:
+      cluster.inClusterEnabled: true
+
+  # <---Component resource overrides--->
+  controller:
+    resources:
+      requests:
+        cpu: "1"
+        memory: 1Gi
+      limits:
+        cpu: "2"
+        memory: 1Gi
+
+  applicationSet:
+    resources:
+      requests:
+        cpu: 500m
+        memory: 512Mi
+      limits:
+        cpu: "1"
+        memory: 1Gi
+
+  # <---Redis image details--->
+  redis:
+    enabled: true
+    image:
+      repository: docker.io/harness/redis
+      tag: 7.4.8
+    resources:
+      requests:
+        cpu: 500m
+        memory: 512Mi
+      limits:
+        cpu: "1"
+        memory: 1Gi
+
+  redisSecretInit:
+    enabled: true
+
+  # <---High Availability Agent (HA) values--->
+  redis-ha:
+    enabled: false
+    image:
+      repository: docker.io/harness/redis
+      tag: 7.4.8
+    haproxy:
+      enabled: false
+      image:
+        repository: docker.io/harness/haproxy
+        tag: 3.2.14-alpine3.23
+    configmapTest:
+      ## Image for redis-ha-configmap-test hook
+      image:
+        repository: docker.io/harness/shellcheck
+        tag: v0.11.0
+    resources:
+      requests:
+        cpu: 500m
+        memory: 512Mi
+      limits:
+        cpu: "1"
+        memory: 1Gi
+
+  repoServer:
+    replicas:  1 
+    resources:
+      requests:
+        cpu: "1"
+        memory: 3Gi
+      limits:
+        cpu: "2"
+        memory: 3Gi
+    env:
+      - name: HELM_PLUGINS
+        value: /helm-sops-tools/helm-plugins/
+      - name: HELM_SECRETS_CURL_PATH
+        value: /helm-sops-tools/curl
+      - name: HELM_SECRETS_SOPS_PATH
+        value: /helm-sops-tools/sops
+      - name: HELM_SECRETS_KUBECTL_PATH
+        value: /helm-sops-tools/kubectl
+      - name: HELM_SECRETS_BACKEND
+        value: sops
+      - name: HELM_SECRETS_VALUES_ALLOW_SYMLINKS
+        value: "false"
+      - name: HELM_SECRETS_VALUES_ALLOW_ABSOLUTE_PATH
+        value: "true"
+      - name: HELM_SECRETS_VALUES_ALLOW_PATH_TRAVERSAL
+        value: "false"
+      - name: HELM_SECRETS_WRAPPER_ENABLED
+        value: "true"
+      - name: HELM_SECRETS_HELM_PATH
+        value: /usr/local/bin/helm
+      - name: PATH
+        value: /helm-sops-tools/helm-secrets:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    
+
+    # <---SOPS override values--->
+    initContainers:
+      - name: sops-helm-secrets-tool
+        image: docker.io/harness/gitops-agent-installer-helper:v0.0.15
+        imagePullPolicy: IfNotPresent
+        resources:
+          requests:
+            cpu: 500m
+            memory: 512Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
+        command: [ sh, -ec ]
+        args:
+          - |
+            cp -r /custom-tools/. /helm-sops-tools
+            cp /helm-sops-tools/helm-plugins/helm-secrets/scripts/wrapper/helm.sh /helm-sops-tools/helm
+            mkdir -p /helm-sops-tools/helm-secrets && cp /helm-sops-tools/helm-plugins/helm-secrets/scripts/wrapper/helm.sh /helm-sops-tools/helm-secrets/helm
+            chmod +x /helm-sops-tools/helm-secrets/*
+            chmod +x /helm-sops-tools/*
+        volumeMounts:
+          - mountPath: /helm-sops-tools
+            name: helm-sops-tools
+    extraContainers:
+      - command: [ /var/run/argocd/argocd-cmp-server ]
+        image: docker.io/harness/gitops-agent-installer-helper:v0.0.15
+        imagePullPolicy: IfNotPresent
+        name: argocd-harness-plugin
+        resources:
+          requests:
+            cpu: 500m
+            memory: 512Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
+        securityContext:
+          capabilities:
+            drop:
+              - NET_RAW
+          runAsGroup: 999
+          runAsUser: 999
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+          - mountPath: /var/run/argocd
+            name: var-files
+          - mountPath: /home/argocd/cmp-server/plugins
+            name: plugins
+          - mountPath: /tmp
+            name: tmp
+          - mountPath: /home/argocd/cmp-server/config/plugin.yaml
+            name: argocd-harness-plugin
+            subPath: harness.yaml
+
+# <---Agent overrides--->
+agent:
+  harnessName: harness-agent
+  image:
+    repository: docker.io/harness/gitops-agent
+    tag: v0.118.0
+
+  replicas: 1
+  resources:
+    requests:
+      cpu: 500m
+      memory: 512Mi
+    limits:
+      cpu: "1"
+      memory: 1Gi
+
+  fipsEnabled: false
+
+  autoscaling:
+    enabled: false
+
+  highAvailability: false
+  # <---Agent Proxy Config overrides--->
+  proxy:
+    enabled: false
+    httpProxy: 
+    httpsProxy: 
+
+# <---Agent upgrader overrides--->
+upgrader:
+  enabled: true
+  image: docker.io/harness/upgrader:latest
+
+  config:
+    # -- Proxy configuration for upgrader
+    # HTTPS_PROXY=proxyScheme://proxyUser:proxyPassword@proxyHost:proxyPort
+    proxyHost: 
+    proxyPort: 
+    proxyScheme: 
+    noProxy: 
+    proxyUser: 
+    proxyPassword: 

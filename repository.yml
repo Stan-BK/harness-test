@@ -1,0 +1,11 @@
+gitops:
+    name: harness-gitops
+    identifier: harnessgitops
+    projectIdentifier: default_project
+    orgIdentifier: default
+    type: repository
+    repo:
+        repo: https://github.com/Stan-BK/harness-test
+        type: git
+        connectionType: HTTPS_ANONYMOUS
+    agentIdentifier: AGENT_NAME
